@@ -107,5 +107,5 @@ If you wish to not load the $LOCAL\_LANG array into global space, but
 rather have it returned in a variable, just set the second optional
 argument true like this:
 
-$myLocalLang = $GLOBALS['LANG']->includeLLFile('EXT:setup/mod/locallang.xml', TRUE);
+$myLocalLang = $GLOBALS['LANG']->includeLLFile('EXT:setup/mod/locallang.xml', FALSE);
 
