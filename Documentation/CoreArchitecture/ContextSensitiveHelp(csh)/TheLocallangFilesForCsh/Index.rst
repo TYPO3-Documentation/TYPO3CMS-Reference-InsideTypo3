@@ -25,6 +25,9 @@ Then there are a few other rules to follow:
   extension ".xml" takes four and any "subfile-suffix" (fx. "dk.") would
   take three, there is 31-14-4-3 = 10 chars left. So lets say you have 9
   characters to name the file to be safe.
+  
+  That 31 chars limitation can't be true, or?
+  locallang_csh_tx_sporlastic_domain_model_products.xlf
 
   Examples where "pages" (5 chars) is the unique name::
 
