@@ -24,7 +24,7 @@ Then there are a few other rules to follow:
   Examples where "pages" (5 chars) is the unique name::
 
      locallang_csh_pages.xml    =>   23 chars
-     dk.locallang_csh_pages.xml      =>   26 chars
+     dk.locallang_csh_pages.xml      =>   26 chars 
 
 - Observe the label-key naming by the syntax [fieldname].[type-
   key].[special option] (see previous section)
