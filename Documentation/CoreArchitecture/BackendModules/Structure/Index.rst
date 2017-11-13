@@ -27,7 +27,7 @@ Module menu
   modules (which can be collapsed) and submodules which is where
   the action really happens.
 
-  The module menu can be resized by dragging the divider.
+  The module menu can be opened or closed by using the icon on the top left.
 
   New main or submodules are registered using the
   :code:`\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule()`
@@ -47,7 +47,7 @@ Navigation frame
   The current location (i.e. page or frame) is carried over between
   navigation frames when changing module. This means, for example, that
   when you move from the **WEB > Page** module to the **WEB > List**
-  module, you stay on the same page.
+  module, the same page stays selected in the page tree.
 
 Docheader
   This part always sits at the top of the Content area. It will generally

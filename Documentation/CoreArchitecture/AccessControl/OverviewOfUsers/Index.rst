@@ -20,8 +20,8 @@ provided by the Introduction Package:
    :alt: Comparing users thanks to the Backers users module
 
 
-The other useful is the ability to switch user, by clicking on
-the "Switch to user" action icon:
+The other useful feature is the ability to switch user,
+by clicking on the "Switch to user" action icon:
 
 .. figure:: ../../../Images/AccessSimulateUserButton.png
    :alt: The button to simulate another user

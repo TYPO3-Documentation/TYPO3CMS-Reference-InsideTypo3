@@ -14,7 +14,7 @@ an extension configuration in the Extension Manager). Thus custom
 code cannot reside in that file.
 
 Such code should be placed in the :file:`typo3conf/AdditionalConfiguration.php`
-file. This file is never touched by TYPO3 CMS, so any code will be
+file. This file is never touched by TYPO3, so any code will be
 left alone.
 
 Furthermore this file is loaded **after** :file:`typo3conf/LocalConfiguration.php`,

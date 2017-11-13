@@ -67,7 +67,7 @@ All languages packs can also be fetched using the command line:
 
 .. code-block:: shell
 
-   /path/to/php /path/to/typo3/cli_dispatch.phpsh extbase language:update
+   /path/to/typo3/bin/typo3 extbase language:update
 
 
 .. _language-classes:

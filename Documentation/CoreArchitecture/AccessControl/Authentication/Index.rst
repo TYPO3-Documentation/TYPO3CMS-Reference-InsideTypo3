@@ -11,7 +11,7 @@ This makes it very flexible. It is easy to add new authentication services
 via extensions.
 
 Services get executed in order of priority. Services with higher
-priority gets executed first, which means it is easy to control
+priority get executed first, which means it is easy to control
 the order in which services get executed. By default, TYPO3 CMS
 provides a basic authentication service and two improved ones,
 which are installed by default: "saltedpasswords" and "rsaauth".

@@ -17,7 +17,7 @@ You should perform the basic installation steps and **not** install
 any distribution. This will give you the "lightest" possible version
 of TYPO3 CMS.
 
-Log into your basisc installation and  move to the **ADMIN TOOLS > Extensions**
+Log into your basic installation and  move to the **ADMIN TOOLS > Extensions**
 module. You will see all extensions which are loaded by default.
 The required extensions are not only loaded by default, but have no
 "Activate/Deactivate" button.

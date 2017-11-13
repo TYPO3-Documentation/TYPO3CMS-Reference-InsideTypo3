@@ -34,11 +34,17 @@ Here is the local configuration file after the :ref:`basic installation <install
 			'loginSecurityLevel' => 'rsa',
 		],
 		'DB' => [
-			'database' => 'empty_typo3',
-			'host' => 'localhost',
-			'password' => 'foo',
-			'socket' => '',
-			'username' => 'bar',
+			'Connections' => [
+				'Default' => [
+					'charset' => 'utf8',
+					'dbname' => 'empty_typo3',
+					'driver' => 'mysqli',
+					'host' => '127.0.0.1',
+					'password' => 'foo',
+					'port' => 3306,
+					'user' => 'bar',
+				],
+			],
 		],
 		'EXT' => [
 			'extConf' => [
@@ -54,37 +60,7 @@ Here is the local configuration file after the :ref:`basic installation <install
 			'loginSecurityLevel' => 'rsa',
 		],
 		'GFX' => [
-			'colorspace' => 'RGB',
-			'im' => 1,
-			'im_mask_temp_ext_gif' => 1,
-			'im_path' => '/usr/local/bin/',
-			'im_path_lzw' => '/usr/local/bin/',
-			'im_v5effects' => -1,
-			'im_version_5' => 'gm',
-			'image_processing' => 1,
 			'jpg_quality' => '80',
-		],
-		'INSTALL' => [
-			'wizardDone' => [
-				'TYPO3\CMS\Install\Updates\AccessRightParametersUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\BackendUserStartModuleUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\Compatibility6ExtractionUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\ContentTypesToTextMediaUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\ExtensionManagerTables' => 1,
-				'TYPO3\CMS\Install\Updates\FileListIsStartModuleUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\FilesReplacePermissionUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\LanguageIsoCodeUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\MediaceExtractionUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\MigrateMediaToAssetsForTextMediaCe' => 1,
-				'TYPO3\CMS\Install\Updates\MigrateShortcutUrlsAgainUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\OpenidExtractionUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\PageShortcutParentUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\ProcessedFileChecksumUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\TableFlexFormToTtContentFieldsUpdate' => 1,
-				'TYPO3\CMS\Install\Updates\WorkspacesNotificationSettingsUpdate' => 1,
-				'TYPO3\CMS\Rtehtmlarea\Hook\Install\DeprecatedRteProperties' => 1,
-				'TYPO3\CMS\Rtehtmlarea\Hook\Install\RteAcronymButtonRenamedToAbbreviation' => 1,
-			],
 		],
 		'MAIL' => [
 			'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
@@ -104,7 +80,6 @@ Here is the local configuration file after the :ref:`basic installation <install
 					],
 				],
 			],
-			'clearCacheSystem' => true,
 			'devIPmask' => '*',
 			'displayErrors' => 1,
 			'enableDeprecationLog' => 'file',
@@ -115,8 +90,6 @@ Here is the local configuration file after the :ref:`basic installation <install
 			'sitename' => 'New TYPO3 site',
 			'sqlDebug' => 1,
 			'systemLogLevel' => 0,
-			't3lib_cs_convMethod' => 'mbstring',
-			't3lib_cs_utils' => 'mbstring',
 		],
 	];
 
@@ -142,15 +115,13 @@ FE
 GFX
   Options related to image manipulation.
 
-INSTALL
-  The Install Tool does not have any options, but stores in the local configuration
-  file the list of upgrade wizards that were already executed (to avoid presenting
-  them to the user over and over again).
-
 MAIL
   Options related to the sending of emails (transport, server, etc.).
 
 SYS
   General options which may affect both the frontend and the backend.
 
-Details on the various configuration-options can be found in the install-tool as well as the TYPO3-source at :file:`typo3/sysext/core/Configuration/DefaultConfiguration.php`. The documentation shown in the install-tool is automatically extracted from those comments of DefaultConfiguration.php.
+Details on the various configuration-options can be found in the install-tool as
+well as the TYPO3-source at :file:`typo3/sysext/core/Configuration/DefaultConfigurationDescription.php`.
+The documentation shown in the install-tool is automatically extracted from those values of
+:file:`DefaultConfigurationDescription.php`.

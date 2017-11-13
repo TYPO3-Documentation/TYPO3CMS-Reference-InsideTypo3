@@ -34,8 +34,8 @@ Extensions are managed by a Package Manager. The two most visible parts of
 this tool are the :code:`\TYPO3\CMS\Core\Package\PackageManager` PHP class
 and the :file:`typo3conf/PackageStates.php` file.
 
-The :file:`typo3conf/PackageStates.php` file contains a list of all available
-packages and their status (active or inactive).
+The :file:`typo3conf/PackageStates.php` file contains a list of all active
+packages.
 
 Here is an extract of this file:
 
@@ -52,30 +52,28 @@ Here is an extract of this file:
 	return [
 		'packages' => [
 			'core' => [
-				'manifestPath' => '',
-				'composerName' => 'typo3/cms-core',
-				'state' => 'active',
 				'packagePath' => 'typo3/sysext/core/',
-				'classesPath' => 'Classes/',
-				'suggestions' => [],
 			],
 			'extbase' => [
-				'manifestPath' => '',
-				'composerName' => 'typo3/cms-extbase',
-				'state' => 'active',
 				'packagePath' => 'typo3/sysext/extbase/',
-				'classesPath' => 'Classes/',
-				'suggestions' => [],
+			],
+			'fluid' => [
+				'packagePath' => 'typo3/sysext/fluid/',
+			],
+			'install' => [
+				'packagePath' => 'typo3/sysext/install/',
+			],
+			'frontend' => [
+				'packagePath' => 'typo3/sysext/frontend/',
 			],
 			...
 		],
-		'version' => 4,
+		'version' => 5,
 	];
 
 .. warning::
 
-   You should not edit this file yourself, unless you know exactly what you are doing
-   and you also know how to clear the cache manually.
+   You should not edit this file yourself, unless you know exactly what you are doing.
 
 
 .. _extensions-system-main:
@@ -120,13 +118,14 @@ extbase
   Not all of the TYPO3 CMS backend is written in Extbase, but many modules are,
   with more being migrated to that framework with each new version.
 
-  For extensions, Extbase is now the recommended way to go.
-
 fluid
-  Fluid is a templating engine complementary to Extbase. It forms the "View" part
-  of the MVC framework. This system extension provides a number of base classes
+  Fluid is a templating engine. It forms the "View" part of the MVC framework.
+  The templating engine itself is provided as "fluid standalone" which can be used
+  in other frameworks or as a standalone templating engine.
+  This system extension provides a number of base classes
   and many View Helpers (in :file:`typo3/sysext/fluid/Classes/ViewHelpers`), which
-  extend the basic templating features of Fluid.
+  extend the basic templating features of Fluid. Fluid can be used in conjunction
+  with extbase (where it is the default template engine) or standalone.
 
 install
   This system extension is the package containing the TYPO3 CMS Install Tool.

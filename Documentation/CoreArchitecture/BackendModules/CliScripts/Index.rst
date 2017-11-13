@@ -12,7 +12,7 @@ scripts from the command line. This makes it possible - for
 example - to set up cronjobs. There are two ways to register
 CLI scripts:
 
-- using the :file:`cli_dispatch.phpsh` command-line dispatcher.
+- using the :file:`typo3` command-line dispatcher based on Symfony Commands.
 
 - creating an Extbase command controller.
 
@@ -22,70 +22,57 @@ CLI scripts:
 The command-line dispatcher
 """""""""""""""""""""""""""
 
-.. note::
+TYPO3 uses Symfony commands to provide an easy to use, well-documented API for
+writing CLI commands.
 
-   Although still common and not officially deprecated,
-   this way of doing things is considered old style.
-   Using Extbase command controllers is now recommended
-   (although Extbase command controllers are called via
-   the dispatched itself).
+Symfony commands should extend the class :php:`Symfony\Component\Console\Command\Command`.
 
-Any given script can be registered with the :file:`cli_dispatch.phpsh`
-command-line dispatcher. Registration takes places in an extension's
-:file:`ext_localconf.php` file (example taken from the "scheduler"
-system extension):
+TYPO3 looks in a file :file:`Commands.php` in the :file:`Configuration` folder of extensions for configured commands.
+The :file:`Commands.php` file returns a simple array with the command name and class.
+
+For example to add a command which can be called via :bash:`bin/typo3 yourext:dothings` add the following:
 
 .. code-block:: php
 
-     // Register the Scheduler as a possible key for CLI calls
-     $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['GLOBAL']['cliKeys']['scheduler'] = array(
-         function () {
-             $schedulerCliController = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Scheduler\Controller\SchedulerCliController::class);
-             $schedulerCliController->run();
-         },
-         '_CLI_scheduler'
-     );
+    return [
+        'yourext:dothings' => [
+            'class' => \Vendor\Extension\Command\DoThingsCommand::class
+        ],
+    ];
 
-The last part of the declaration ("scheduler") is the key with which
-the script can be called.
+The command should implement at least a :php:`configure` and an :php:`execute` method.
 
-The registration takes a closure which instantiates the corresponding
-class and calls the :code:`run()` method. The second argument is the
-backend user that TYPO3 CMS should use when running that script
-(here "_cli_scheduler"). If that user is not present in the system,
-the script will fail. It will also fail if that user is "Admin".
+:php:`configure` as the name would suggest allows to configure the command.
+Via :php:`configure` a description or a help text can be added, or mandatory and optional arguments and parameters defined.
 
-The script should simply implement the :code:`run()` method and perform
-its logic according to the arguments received on the command line.
+A simple example can be found in the :php:`ListSysLogCommand`:
 
-The dispatcher is run by using:
+.. code-block:: php
 
-.. code-block:: shell
+    /**
+     * Configure the command by defining the name, options and arguments
+     */
+    public function configure()
+    {
+        $this->setDescription('Show entries from the sys_log database table of the last 24 hours.');
+        $this->setHelp('Prints a list of recent sys_log entries.' . LF . 'If you want to get more detailed information, use the --verbose option.');
+    }
 
-     $ /path/to/php /path/to/webroot/typo3/cli_dispatch.phpsh
 
-Calling the script without any argument will get you a list of available
-keys:
+The :php:`execute` method contains the logic you want to execute when executing the command.
 
-.. code-block:: shell
-
-     Oops, an error occurred: This script must have a command as first argument.
-
-     Valid keys are:
-
-       extbase
-       lowlevel_admin
-       lowlevel_cleaner
-       lowlevel_refindex
-
-Calling the script again with a key but no further arguments will trigger
-the display of the script's help text.
+A detailed description and an example can be found at `the Symfony Command Documentation <https://symfony.com/doc/current/console.html>`_.
 
 
 .. _cli-mode-command-controllers:
 
 Extbase command controllers
 """""""""""""""""""""""""""
+
+.. note::
+
+   If you do not need Extbase in your command it is recommended to directly use
+   a Symfony command (see above).
 
 First of all, the command controller must be registered in an extension's
 :file:`ext_localconf.php` file (example taken from the "lang" system
@@ -130,17 +117,6 @@ This command would be called by using:
 
 .. code-block:: shell
 
-     $ /path/to/php /path/to/webroot/typo3/cli_dispatch.phpsh extbase language:update fr
+     $ /path/to/php bin/typo3 extbase language:update fr
 
 which would update translation packages for the French language.
-
-The advantage of using Extbase command controllers are many:
-
-- you benefit from the Extbase-way of doing things, where actions are automatically
-  dispatched to the proper method
-
-- display of help text is easy, since PHPdoc comments are used
-
-- the base command controller gives you access to many useful tools, in particular
-  for outputting to the terminal, thanks to the integration of the Symfony console.
-

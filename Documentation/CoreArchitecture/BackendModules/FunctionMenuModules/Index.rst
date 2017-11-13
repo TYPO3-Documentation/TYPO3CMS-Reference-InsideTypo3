@@ -8,8 +8,7 @@ Function Menu modules
 
 For some old-styles modules it is possible to register additional
 functions that will be added to the function menu. It is not
-possible to do so for newer modules. It is not known yet whether
-such a feature will be introduced or not.
+possible to do so for newer modules.
 
 The modules to which functions can be added are **WEB > Info**,
 **WEB > Functions** and **WEB > Template**.

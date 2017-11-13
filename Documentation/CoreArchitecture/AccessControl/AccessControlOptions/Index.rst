@@ -47,7 +47,7 @@ additional technical details, where necessary.
    users have access to every single feature of the TYPO3 CMS backend.
 
 Modules
-  This is a list of submodules a user may be given access to. Acces to a main
+  This is a list of submodules a user may be given access to. Access to a main
   module is implicit, as soon as a user has access to at least one of its
   submodules.
 
