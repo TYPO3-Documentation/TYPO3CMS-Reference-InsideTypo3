@@ -66,7 +66,7 @@ Here is an extract of this file:
 			'frontend' => [
 				'packagePath' => 'typo3/sysext/frontend/',
 			],
-			...
+			// ...
 		],
 		'version' => 5,
 	];

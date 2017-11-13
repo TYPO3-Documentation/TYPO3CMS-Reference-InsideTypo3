@@ -44,7 +44,7 @@ Here is an extract of :file:`typo3/sysext/backend/Configuration/Backend/Routes.p
 			'path' => '/main',
 			'target' => Controller\BackendController::class . '::mainAction'
 		],
-		...
+		// ...
 	];
 
 So a routes file essentially returns an array containing routes mapping.

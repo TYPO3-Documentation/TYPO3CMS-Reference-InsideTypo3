@@ -68,7 +68,7 @@ This is an extract of a typical file
 				<trans-unit id="title.image_descr">
 					<source>The field for the 'Page Title' has a small "Required" icon next to it; You must supply a 'Page Title'. You cannot save the new page unless you enter a title for it.</source>
 				</trans-unit>
-				...
+				// ...
 			</body>
 		</file>
 	</xliff>

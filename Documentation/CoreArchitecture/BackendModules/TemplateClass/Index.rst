@@ -46,7 +46,7 @@ variable in the controller. Here is an example taken from system extension "beus
 		 */
 		protected $defaultViewObjectName = \TYPO3\CMS\Backend\View\BackendTemplateView::class;
 
-		...
+		// ...
 	}
 
 After that, you can use the :code:`initializeView()` method to

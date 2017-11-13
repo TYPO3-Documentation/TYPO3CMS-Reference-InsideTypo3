@@ -43,7 +43,7 @@ Function Menu modules are registered in an extension's
              null,
              'LLL:EXT:wizard_crpages/Resources/Private/Language/locallang.xlf:wiz_crMany'
          );
-         ...
+         // ...
      }
 
 Because a Function Menu module lives in the environment of its host backend

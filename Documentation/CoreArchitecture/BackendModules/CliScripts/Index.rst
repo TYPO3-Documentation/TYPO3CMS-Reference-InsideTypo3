@@ -99,7 +99,7 @@ extension:
       */
      class LanguageCommandController extends \TYPO3\CMS\Extbase\Mvc\Controller\CommandController
      {
-         ...
+         // ...
 
          /**
           * Update language file for each extension
@@ -109,7 +109,7 @@ extension:
           */
          public function updateCommand($localesToUpdate = '')
          {
-             ...
+             // ...
          }
      }
 
