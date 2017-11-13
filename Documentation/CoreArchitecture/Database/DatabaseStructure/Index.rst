@@ -57,7 +57,8 @@ There are certain requirements for such managed tables:
    Except for the "uid" and "pid" fields, all other fields do not fill a role
    automatically as soon as they exist. Their existence must be declared in
    the :ref:`TCA configuration <t3tca:ctrl>`. This means that such fields can
-   also be named freely, the above are just suggestions.
+   also be named freely, the above are the default names TYPO3 uses - for
+   consistency it is recommended to name them that way.
 
 
 .. _database-structure-pages:
@@ -107,7 +108,7 @@ All these tables are not subject to the uid/pid constraint mentioned
 above, but they may have such fields if it is convenient for whatever
 reason.
 
-There are no way such tables can be managed via the TYPO3 CMS
+There is no way such tables can be managed via the TYPO3 CMS
 backend unless a specific module provides a form of access to it.
 For example, the **SYSTEM > Log** module provides an interface
 to browse records from the "sys\_log" table.

@@ -11,7 +11,7 @@ Implementing CSH
 For new tables and fields
 """""""""""""""""""""""""
 
-This is very simple. Just create a language file following the
+Create a language file following the
 explanations given in this chapter and register it in your
 extension's :file:`ext_tables.php` file:
 
@@ -32,7 +32,7 @@ form engine.
 Adding CSH for fields added to existing tables
 """"""""""""""""""""""""""""""""""""""""""""""
 
-This is really just as simple. Create a language file in your extension
+Create a language file in your extension
 using the name of the table that you are extending. Inside the file,
 place labels only for the fields that you have added. Register the file
 as usual, but for the table that you are extending:

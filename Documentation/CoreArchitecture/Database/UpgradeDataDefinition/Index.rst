@@ -40,7 +40,7 @@ button, you will be presented with a list of updates to perform.
 What this tool does is collating the information from all
 :file:`ext_tables.sql` files of active extensions (be they
 system or public) and compare it with the current database
-structure. It then proposes you to perform the necessary changes,
+structure. It then proposes to perform the necessary changes,
 grouped by type: creating new tables, adding new fields to existing
 tables, altering existing fields, dropping unused tables and fields.
 

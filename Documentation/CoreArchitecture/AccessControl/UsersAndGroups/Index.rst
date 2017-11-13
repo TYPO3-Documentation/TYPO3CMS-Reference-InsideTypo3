@@ -67,12 +67,13 @@ an admin user can access every single feature of the TYPO3 CMS
 backend, like the "root" user on a UNIX system.
 
 All systems must have at least one "admin" user and most systems
-should have *only* one "admin" user. It should probably be the
-developer with the total understanding of the system. Not even "super
-users" should be allowed "admin" access since that will most likely
-grant them access to more than they need.
+should have *only* "admin" users for the developers - not for any
+editor. Make sure to *not* share TYPO3 accounts with multipl users
+but create dedicated accounts for everyone.
+Not even "super users" should be allowed "admin" access since that
+will most likely grant them access to more than they need.
 
-Admin users are differentiated with a red icon.
+Admin users are differentiated with an orange icon.
 
 .. figure:: ../../../Images/AccessBackendUserAdmin.png
    :alt: In Web > List view, the different icon for admin users
@@ -112,3 +113,6 @@ Records located in the page tree root are identified by having their
 relation to the page where a record belongs. Since no pages can have
 the id of zero, this is the id of the root. Notice that only "admin"
 users can edit records in the page root!
+
+If you need non-admin users to create new backend users, have a look
+at the TYPO3 system extension `sys_action` for a possible solution.
