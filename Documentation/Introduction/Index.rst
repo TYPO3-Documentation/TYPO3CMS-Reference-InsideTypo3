@@ -79,7 +79,7 @@ If you find a bug in this manual, please be so kind as to check the
 online version on http://docs.typo3.org/typo3cms/InsideTypo3Reference/.
 From there you can hit the "Edit me on GitHub" button in the top right corner
 and submit a pull request via GitHub. Alternatively you can just file an issue
-using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-Typoscript/issues.
+using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-InsideTypo3/issues.
 
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
