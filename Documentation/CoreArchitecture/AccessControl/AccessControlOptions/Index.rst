@@ -254,7 +254,7 @@ permissions.
 When a user creates new pages in TYPO3 CMS they will by default get the
 creating user as owner. The owner group will be set to the *first
 listed user group* configured for the users record (if any). These defaults
-can be changed through :ref:`Page TSconfig <t3tsconfig:pagetsconfig>`.
+can be changed through :ref:`Page TSconfig <t3tsconfig:pagetcemain-permissions-user-group>`.
 
 
 .. _access-options-user-tsconfig:
