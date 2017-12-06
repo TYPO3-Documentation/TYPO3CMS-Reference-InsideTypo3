@@ -11,13 +11,14 @@ Whenever a call to TYPO3 CMS is made, the application goes through a
 bootstrapping process managed by a dedicated API. This process is also
 used in the frontend, but only the backend process is described here.
 
-The bootstrapping class is :php:`\TYPO3\CMS\Core\Core\Bootstrap`.
-It goes through the steps described below.
+Classes involved in the backend bootstrapping process are :php:`\TYPO3\CMS\Core\Core\Bootstrap` and :php:`TYPO3\CMS\Backend\Http\Application`.
+
+The following steps are performed during bootstrapping. 
 
 1. Define legacy constants
 ==========================
 
-In this step some constants are defined, which will eventually
+In :php:`Application::defineLegacyConstants` some constants are defined, which will eventually
 be dropped, but are still initialized for now.
 
 2. Initialize class loader
@@ -101,12 +102,12 @@ list of the most important stuff happening at this point:
 9. Dispatch
 ===========
 
-After all that the :php:`Bootstrap::run()` method is called, which
+After all that the :php:`Application::run()` method is called, which
 basically dispatches the request to the right handler.
 
 
 10. Initialization of the TYPO3 Backend
-======================================
+=======================================
 
 The backend request handler has its own :php:`boot()` method, which performs
 yet more initialization and set up as needed. A general request to the
