@@ -69,22 +69,23 @@ all changes. Let's just consider it a clean slate for now.
 
 .. _feedback:
 
-Feedback
-^^^^^^^^
-
-For general questions about the documentation get in touch by writing
-to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
+How to contribute
+^^^^^^^^^^^^^^^^^
 
 If you find a bug in this manual, please be so kind as to check the
 online version on http://docs.typo3.org/typo3cms/InsideTypo3Reference/.
 From there you can hit the "Edit me on GitHub" button in the top right corner
-and submit a pull request via GitHub. Alternatively you can just file an issue
-using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-InsideTypo3/issues.
+and submit a pull request via GitHub. Alternatively you can just `file an issue
+using the bug tracker <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-InsideTypo3/issues>`__.
 
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
-If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/).
+If you want to support us, please join the slack channel `typo3-documentation 
+<https://typo3.slack.com/messages/C028JEPJL>`__. Visit https://forger.typo3.org/slack to gain
+access to Slack.
+Have a look at the contribution page for more information: https://docs.typo3.org/Contribute/Index.html
+And finally, as a last resort, you can get in touch with the documentation team `by mail <documentation@typo3.org>`_.
+
 
 
 .. _credits:
