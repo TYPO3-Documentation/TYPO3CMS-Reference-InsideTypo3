@@ -60,7 +60,7 @@ consider that as well!
 .. _what-s-new:
 
 What's new
-^^^^^^^^^^
+----------
 
 This version has been fully updated for TYPO3 CMS 7. This manual had not been
 updated in a very long time, which means it is impossible to list
@@ -70,7 +70,7 @@ all changes. Let's just consider it a clean slate for now.
 .. _feedback:
 
 How to contribute
-^^^^^^^^^^^^^^^^^
+-----------------
 
 If you find a bug in this manual, please be so kind as to check the
 online version on http://docs.typo3.org/typo3cms/InsideTypo3Reference/.
