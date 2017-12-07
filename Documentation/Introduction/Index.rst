@@ -69,8 +69,8 @@ all changes. Let's just consider it a clean slate for now.
 
 .. _feedback:
 
-Feedback
-^^^^^^^^
+Feedback and Contribution
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For general questions about the documentation get in touch by writing
 to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
@@ -83,9 +83,11 @@ using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference
 
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
-If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/).
 
+If you want to support us, please join the slack channel "typo3-documentation" (for an
+invitation to typo3.slack.com see https://forger.typo3.org/slack).
+
+Have a look at the contribution page for more information: https://docs.typo3.org/Contribute/Index.html
 
 .. _credits:
 
