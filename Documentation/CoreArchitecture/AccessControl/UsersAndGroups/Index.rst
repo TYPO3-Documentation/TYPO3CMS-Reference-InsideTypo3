@@ -68,7 +68,7 @@ backend, like the "root" user on a UNIX system.
 
 All systems must have at least one "admin" user and most systems
 should have *only* "admin" users for the developers - not for any
-editor. Make sure to *not* share TYPO3 accounts with multipl users
+editor. Make sure to *not* share TYPO3 accounts with multiple users
 but create dedicated accounts for everyone.
 Not even "super users" should be allowed "admin" access since that
 will most likely grant them access to more than they need.
@@ -82,14 +82,14 @@ Admin users are differentiated with an orange icon.
 .. note::
 
    There's no other level between admin and ordinary users.
-   This might sometimes seems a strong limitation, especially
-   when thinking that ordinary users may not access TypoScript
+   This seems to be a strong limitation, especially
+   when you consider that ordinary users may not access TypoScript
    templates.
 
-   There is a security reason for this. From a TypoScript template,
+   However, there is a security reason for this. From a TypoScript template,
    you can call a PHP script. So - in effect - a user with access to
    TypoScript can run arbitrary PHP code on the server, for example
-   to create an admin account for itself. This type of escalation
+   in order to create an admin account for himself. This type of escalation
    cannot be allowed.
 
 

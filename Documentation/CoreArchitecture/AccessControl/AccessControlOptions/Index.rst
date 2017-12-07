@@ -24,7 +24,7 @@ Page permissions
 User TSconfig
   A flexible and hierarchical configuration structure
   defined by TypoScript syntax. This typically describes "soft"
-  permission settings and options for the user which can be used to
+  permission settings and options for the user or group which can be used to
   customize the backend and individual modules.
 
   All User TSconfig options are described in the
@@ -78,7 +78,7 @@ Tables for listing
      list as well.
 
 Tables for editing
-  This is exactly the same list of tables as before, but for grating
+  This is exactly the same list of tables as before, but for granting
   modification rights.
 
 Page types
@@ -91,7 +91,7 @@ Page types
 Excludefields
   When defining column tables in TCA, it is possible to set the
   :ref:`"exclude" property <t3tca:columns-properties-exclude>` to "1".
-  This makes it so that the field is hidden to users by default.
+  This ensures that the field is hidden to users by default.
   Access to it must be explicitly granted in this access list.
 
 Explicitly allow/deny field values
@@ -144,7 +144,8 @@ This is what the user will see:
 
 **File Mounts** are a little more difficult to set up, as they
 involve several steps. First of all, you need to have at least
-one file storage. By default, you will always have one, pointing
+one :ref:`File Storage <t3fal:concepts-storages-drivers>`. By 
+default, you will always have one, pointing
 to the :file:`fileadmin` directory. It is created by TYPO3 CMS
 upon installation.
 
@@ -207,7 +208,7 @@ Page permissions
 """"""""""""""""
 
 Page permissions are designed to work like file permissions on UNIX
-systems. Each page record has an owner user and group and then
+systems. Each page record has an owner user and group and 
 permission settings for the owner, the group and "everybody". This is
 summarized here:
 

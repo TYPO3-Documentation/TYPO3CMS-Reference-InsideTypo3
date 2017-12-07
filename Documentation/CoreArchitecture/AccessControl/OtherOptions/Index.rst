@@ -17,7 +17,7 @@ Backend Users
 
 Default language
   This is the language in which the backend will be localized for the
-  user. The users can change the language themselves in the *User Settings*
+  user. The users can change the language themselves in the :ref:`User Settings <t3start:changing-backend-language>`
   module.
 
   .. note::
@@ -60,7 +60,7 @@ Hide in lists
   This flag will prevent the group from appearing in various
   listings in TYPO3 CMS. This includes modules like **SYSTEM > Access**.
 
-Sub Groups
+Inherit settings from groups (Sub Groups)
   Assigns sub-groups to this group. Sub-groups are
   evaluated before the group including them. If a user is a member of
   a group which includes one or more sub-groups, the user will also be
