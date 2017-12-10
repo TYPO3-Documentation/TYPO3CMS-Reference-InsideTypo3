@@ -65,4 +65,4 @@ navigation frame).
    :alt: Exploring the TBE_MODULES array using the Configuration module
 
 
-The list of modules is parsed by class :code:`\TYPO3\CMS\Backend\Module\ModuleLoader`.
+The list of modules is parsed by the class :code:`\TYPO3\CMS\Backend\Module\ModuleLoader`.

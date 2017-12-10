@@ -8,14 +8,14 @@ The backend template view
 
 .. warning::
 
-   Templating in the backend is in a big shift since a couple of
-   major releases. This chapter describes the current new way of doing
+   Templating in the backend has been redesigned since a couple of
+   major releases ago. This chapter describes the current new way of doing
    things. It may yet change. Please refer to older versions of
    this manual if you need a reference to the old way of programming
    backend modules.
 
 Modern backend modules are written using the Extbase/Fluid combination.
-Thus templates are Fluid-based. On top of that the "backend" system extension
+Thus, templates are Fluid-based. On top of that the "backend" system extension
 provides a general view class :code:`TYPO3\CMS\Backend\View\BackendTemplateView`
 which provides common features for all backend modules, like the management
 of the action menu or the registration of docheader buttons.

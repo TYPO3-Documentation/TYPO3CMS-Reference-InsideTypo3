@@ -25,6 +25,9 @@ The command-line dispatcher
 TYPO3 uses Symfony commands to provide an easy to use, well-documented API for
 writing CLI commands.
 
+Creating a new Symfony command in your extension
+------------------------------------------------
+
 Symfony commands should extend the class :php:`Symfony\Component\Console\Command\Command`.
 
 TYPO3 looks in a file :file:`Commands.php` in the :file:`Configuration` folder of extensions for configured commands.
