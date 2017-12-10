@@ -58,8 +58,8 @@ and extensions you will see this screen:
 No updates are proposed. The Flash message at the top of the screen
 confirms that the database has been analyzed.
 
-The classes involved are :code:`\TYPO3\CMS\Install\Service\SqlSchemaMigrationService`
-and :code:`\TYPO3\CMS\Install\Service\SqlExpectedSchemaService`.
+The classes involved are :code:`\TYPO3\CMS\Core\Database\Schema\SchemaMigrator`
+and :code:`\TYPO3\CMS\Core\Database\Schema\SqlReader`.
 
 More information about the process of upgrading TYPO3 CMS can be found in
 the :ref:`Installation and Upgrade Guide <t3install:upgrade>`.

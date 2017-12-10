@@ -66,20 +66,6 @@ Here is the local configuration file after the :ref:`basic installation <install
 			'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
 		],
 		'SYS' => [
-			'caching' => [
-				'cacheConfigurations' => [
-					'extbase_object' => [
-						'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-						'frontend' => 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend',
-						'groups' => [
-							'system',
-						],
-						'options' => [
-							'defaultLifetime' => 0,
-						],
-					],
-				],
-			],
 			'devIPmask' => '*',
 			'displayErrors' => 1,
 			'enableDeprecationLog' => 'file',
@@ -88,7 +74,6 @@ Here is the local configuration file after the :ref:`basic installation <install
 			'isInitialDatabaseImportDone' => true,
 			'isInitialInstallationInProgress' => false,
 			'sitename' => 'New TYPO3 site',
-			'sqlDebug' => 1,
 			'systemLogLevel' => 0,
 		],
 	];
