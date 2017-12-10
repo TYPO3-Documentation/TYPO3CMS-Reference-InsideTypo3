@@ -14,7 +14,7 @@ CSH labels loaded - if any - for the relevant table.
 Basically, the :code:`$TCA_DESCR` array contains references to the
 registered language files. As it gets used, it is filled with the
 actual labels. This task is performed by method
-:code:`\TYPO3\CMS\Lang\LanguageService::loadSingleTableDescription()`.
+:code:`\TYPO3\CMS\Core\Localization\LanguageService::loadSingleTableDescription()`.
 
 The content of the :code:`$TCA_DESCR` array can be reviewed in the
 **SYSTEM > Configuration** module:
