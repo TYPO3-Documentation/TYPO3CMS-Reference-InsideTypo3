@@ -81,12 +81,12 @@ The :code:`\TYPO3\CMS\Core\Localization\LocalizationFactory` class is dedicated
 to loading the language files. It also manages
 :ref:`localization overrides <t3api:xliff-translating-custom>`.
 
-The :code:`\TYPO3\CMS\Lang\LanguageService` provides the actual methods
+The :code:`\TYPO3\CMS\Core\Localization\LanguageService` provides the actual methods
 to retrieve a localized label. :code:`getLL()` gets a label from an already
 loaded language file. :code:`sL()` loads a language file first and then
 returns a label from it (using a string with the :code:`LLL:EXT:...` syntax as argument).
 
 The :code:`\TYPO3\CMS\Extbase\Utility\LocalizationUtility` is essentially
-a convenience wrapper around the :code:`\TYPO3\CMS\Lang\LanguageService` class,
+a convenience wrapper around the :code:`\TYPO3\CMS\Core\Localization\LanguageService` class,
 whose :code:`translate()` method also takes an array as argument and runs
 PHP's :code:`vsprintf()` on the localized string.

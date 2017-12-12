@@ -188,7 +188,7 @@ Extending an existing label
 """""""""""""""""""""""""""
 
 It is also possible to extend an existing label. Here is an extract from
-:file:`typo3/sysext/context_help/Resources/Private/Language/locallang_csh_pages.xlf`:
+:file:`typo3/sysext/core/Resources/Private/Language/locallang_csh_pages.xlf`:
 
 .. code-block:: xml
 
