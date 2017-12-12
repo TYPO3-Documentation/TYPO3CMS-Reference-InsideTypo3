@@ -11,7 +11,7 @@ Inside TYPO3 CMS
       doc_core_inside
 
 :Version:
-      7 LTS
+      8.7 LTS
 
 :Language:
       en
