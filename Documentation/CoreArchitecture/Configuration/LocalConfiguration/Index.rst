@@ -25,57 +25,57 @@ Here is the local configuration file after the :ref:`basic installation <install
 
 .. code-block:: php
 
-	<?php
-	return [
-		'BE' => [
-			'debug' => true,
-			'explicitADmode' => 'explicitAllow',
-			'installToolPassword' => '$P$Cbp90UttdtIKELNrDGjy4tDxh3uu9D/',
-			'loginSecurityLevel' => 'rsa',
-		],
-		'DB' => [
-			'Connections' => [
-				'Default' => [
-					'charset' => 'utf8',
-					'dbname' => 'empty_typo3',
-					'driver' => 'mysqli',
-					'host' => '127.0.0.1',
-					'password' => 'foo',
-					'port' => 3306,
-					'user' => 'bar',
-				],
-			],
-		],
-		'EXT' => [
-			'extConf' => [
-				'css_styled_content' => 'a:1:{s:32:"loadContentElementWizardTsConfig";s:1:"1";}',
-				'doc_tut_templating' => 'a:0:{}',
-				'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
-				'saltedpasswords' => 'a:2:{s:3:"BE.";a:4:{s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}s:3:"FE.";a:5:{s:7:"enabled";i:1;s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}}',
-				't3editor' => 'a:0:{}',
-			],
-		],
-		'FE' => [
-			'debug' => true,
-			'loginSecurityLevel' => 'rsa',
-		],
-		'GFX' => [
-			'jpg_quality' => '80',
-		],
-		'MAIL' => [
-			'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
-		],
-		'SYS' => [
-			'devIPmask' => '*',
-			'displayErrors' => 1,
-			'encryptionKey' => '0396e1b6b53bf48b0bfed9e97a62744158452dfb9b9909fe32d4b7a709816c9b4e94dcd69c011f989d322cb22309f2f2',
-			'exceptionalErrors' => 28674,
-			'isInitialDatabaseImportDone' => true,
-			'isInitialInstallationInProgress' => false,
-			'sitename' => 'New TYPO3 site',
-			'systemLogLevel' => 0,
-		],
-	];
+   <?php
+   return [
+      'BE' => [
+         'debug' => true,
+         'explicitADmode' => 'explicitAllow',
+         'installToolPassword' => '$P$Cbp90UttdtIKELNrDGjy4tDxh3uu9D/',
+         'loginSecurityLevel' => 'rsa',
+      ],
+      'DB' => [
+         'Connections' => [
+            'Default' => [
+               'charset' => 'utf8',
+               'dbname' => 'empty_typo3',
+               'driver' => 'mysqli',
+               'host' => '127.0.0.1',
+               'password' => 'foo',
+               'port' => 3306,
+               'user' => 'bar',
+            ],
+         ],
+      ],
+      'EXT' => [
+         'extConf' => [
+            'css_styled_content' => 'a:1:{s:32:"loadContentElementWizardTsConfig";s:1:"1";}',
+            'doc_tut_templating' => 'a:0:{}',
+            'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
+            'saltedpasswords' => 'a:2:{s:3:"BE.";a:4:{s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}s:3:"FE.";a:5:{s:7:"enabled";i:1;s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}}',
+            't3editor' => 'a:0:{}',
+         ],
+      ],
+      'FE' => [
+         'debug' => true,
+         'loginSecurityLevel' => 'rsa',
+      ],
+      'GFX' => [
+         'jpg_quality' => '80',
+      ],
+      'MAIL' => [
+         'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
+      ],
+      'SYS' => [
+         'devIPmask' => '*',
+         'displayErrors' => 1,
+         'encryptionKey' => '0396e1b6b53bf48b0bfed9e97a62744158452dfb9b9909fe32d4b7a709816c9b4e94dcd69c011f989d322cb22309f2f2',
+         'exceptionalErrors' => 28674,
+         'isInitialDatabaseImportDone' => true,
+         'isInitialInstallationInProgress' => false,
+         'sitename' => 'New TYPO3 site',
+         'systemLogLevel' => 0,
+      ],
+   ];
 
 As you can see, the array is structured on two main levels. The first level
 corresponds roughly to a category, the second one being properties, which
@@ -105,7 +105,8 @@ MAIL
 SYS
   General options which may affect both the frontend and the backend.
 
-Details on the various configuration-options can be found in the install-tool as
-well as the TYPO3-source at :file:`typo3/sysext/core/Configuration/DefaultConfigurationDescription.php`.
-The documentation shown in the install-tool is automatically extracted from those values of
-:file:`DefaultConfigurationDescription.php`.
+Details on the various configuration-options can be found in the install-tool
+as well as the TYPO3-source at
+:file:`typo3/sysext/core/Configuration/DefaultConfigurationDescription.php`.
+The documentation shown in the install-tool is automatically extracted from
+those values of :file:`DefaultConfigurationDescription.php`.

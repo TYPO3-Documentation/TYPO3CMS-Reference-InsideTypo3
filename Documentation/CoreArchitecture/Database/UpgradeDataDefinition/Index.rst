@@ -20,6 +20,8 @@ changes:
 .. figure:: ../../../Images/DatabaseUpgradeWizard.png
    :alt: The Upgrade Wizard indicating that the database needs updates
 
+   The Upgrade Wizard indicating that the database needs updates
+
 
 When performing smaller updates, after updating extensions or
 - in general - if you want to check the sanity of your system,
@@ -28,6 +30,8 @@ which is part of the "Important actions" menu item:
 
 .. figure:: ../../../Images/DatabaseDatabaseAnalyzer.png
    :alt: The Database analyzer is part of the "Important actions"
+
+   The Database analyzer is part of the "Important actions"
 
 
 When clicking on the "Compare current database with specification"
@@ -54,12 +58,14 @@ and extensions you will see this screen:
 .. figure:: ../../../Images/DatabaseUpToDate.png
    :alt: The Database analyzer shows nothing, the database is up to date
 
+   The Database analyzer shows nothing, the database is up to date
+
 
 No updates are proposed. The Flash message at the top of the screen
 confirms that the database has been analyzed.
 
-The classes involved are :code:`\TYPO3\CMS\Core\Database\Schema\SchemaMigrator`
-and :code:`\TYPO3\CMS\Core\Database\Schema\SqlReader`.
+The classes involved are :php:`\TYPO3\CMS\Core\Database\Schema\SchemaMigrator`
+and :php:`\TYPO3\CMS\Core\Database\Schema\SqlReader`.
 
 More information about the process of upgrading TYPO3 CMS can be found in
 the :ref:`Installation and Upgrade Guide <t3install:upgrade>`.

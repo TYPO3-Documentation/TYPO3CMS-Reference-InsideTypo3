@@ -18,60 +18,60 @@ This is an extract of a typical file
 
 .. code-block:: xml
 
-	<?xml version="1.0" encoding="UTF-8"?>
-	<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-		<file t3:id="1415814856" source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:33Z" product-name="lang">
-			<header/>
-			<body>
-				<trans-unit id=".description">
-					<source>A 'Page' record usually represents a webpage in TYPO3. All pages have an ID number (UID) by which they can be linked and referenced. The 'Page' record itself does not contain the content of the page. 'Page Content' records (Content Elements) are used for this.</source>
-				</trans-unit>
-				<trans-unit id=".details" xml:space="preserve">
-					<source>The 'pages' table is the backbone of TYPO3. All records editable by the main modules in TYPO3 must belong to a page. It's exactly like files and folders on your computer's hard drive.
+   <?xml version="1.0" encoding="UTF-8"?>
+   <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+      <file t3:id="1415814856" source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:33Z" product-name="lang">
+         <header/>
+         <body>
+            <trans-unit id=".description">
+               <source>A 'Page' record usually represents a webpage in TYPO3. All pages have an ID number (UID) by which they can be linked and referenced. The 'Page' record itself does not contain the content of the page. 'Page Content' records (Content Elements) are used for this.</source>
+            </trans-unit>
+            <trans-unit id=".details" xml:space="preserve">
+               <source>The 'pages' table is the backbone of TYPO3. All records editable by the main modules in TYPO3 must belong to a page. It's exactly like files and folders on your computer's hard drive.
 
-	&lt;b&gt;The Page Tree&lt;/b&gt;
-	The pages are organized in a tree structure that reflects the organization of your website.
+   &lt;b&gt;The Page Tree&lt;/b&gt;
+   The pages are organized in a tree structure that reflects the organization of your website.
 
-	&lt;b&gt;UID, PID and the page tree root&lt;/b&gt;
-	All database elements have a field 'uid' which is a unique identification number. They also have a field 'pid' (page id) which holds the ID number of the page to which they belong. If the 'pid' field is zero, the record is found in the 'root.' Only administrators are allowed access to the root. Table records must be configured to either belong to a page or be found in the root.
+   &lt;b&gt;UID, PID and the page tree root&lt;/b&gt;
+   All database elements have a field 'uid' which is a unique identification number. They also have a field 'pid' (page id) which holds the ID number of the page to which they belong. If the 'pid' field is zero, the record is found in the 'root.' Only administrators are allowed access to the root. Table records must be configured to either belong to a page or be found in the root.
 
-	&lt;b&gt;Storage of Database Records&lt;/b&gt;
-	Depending on the 'Type', a page may also represent general storage for database elements in TYPO3. In this case, it is not available as a webpage but is used internally in the page tree as a place to store items such as users, subscriptions, etc. Such pages are typically of the type "Folder".</source>
-				</trans-unit>
-				<trans-unit id="_.seeAlso" xml:space="preserve">
-					<source>xMOD_csh_corebe:pagetree,
-	tt_content,
-	About pages | https://docs.typo3.org/typo3cms/GettingStartedTutorial/GeneralPrinciples/PageTree/</source>
-					<note from="developer">A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note>
-				</trans-unit>
-				<trans-unit id="_.image" xml:space="preserve">
-					<source>EXT:lang/cshimages/pages_1.png,
-	EXT:lang/cshimages/pages_2.png,</source>
-					<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-				</trans-unit>
-				<trans-unit id=".image_descr" xml:space="preserve">
-					<source>The most basic fields on a page are the 'Disable Page' option, the 'Type' of page ("doktype") and the 'Page Title'.
-	Pages are arranged in a page tree in TYPO3. The page from the editing form in the previous screenshot was the "Intro" page from this page tree. As you can see it belongs in the root of the page tree and has a number of subpages pages under it.</source>
-				</trans-unit>
-				<trans-unit id="title.description">
-					<source>Enter the title of the page or folder. This field is required.</source>
-				</trans-unit>
-				<trans-unit id="title.details" xml:space="preserve">
-					<source>The 'Page Title' is used to represent the page visually in the system, for example in the page tree. Also the 'Page Title' is used by default for navigation links on webpages.
-	You can always change the 'Page Title' without affecting links to a page. This is because pages are always referenced by ID number, not their title.
-	You can use any characters in the 'Page Title'.</source>
-				</trans-unit>
-				<trans-unit id="_title.image">
-					<source>EXT:lang/cshimages/pages_3.png</source>
-					<note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-				</trans-unit>
-				<trans-unit id="title.image_descr">
-					<source>The field for the 'Page Title' has a small "Required" icon next to it; You must supply a 'Page Title'. You cannot save the new page unless you enter a title for it.</source>
-				</trans-unit>
-				// ...
-			</body>
-		</file>
-	</xliff>
+   &lt;b&gt;Storage of Database Records&lt;/b&gt;
+   Depending on the 'Type', a page may also represent general storage for database elements in TYPO3. In this case, it is not available as a webpage but is used internally in the page tree as a place to store items such as users, subscriptions, etc. Such pages are typically of the type "Folder".</source>
+            </trans-unit>
+            <trans-unit id="_.seeAlso" xml:space="preserve">
+               <source>xMOD_csh_corebe:pagetree,
+   tt_content,
+   About pages | https://docs.typo3.org/typo3cms/GettingStartedTutorial/GeneralPrinciples/PageTree/</source>
+               <note from="developer">A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note>
+            </trans-unit>
+            <trans-unit id="_.image" xml:space="preserve">
+               <source>EXT:lang/cshimages/pages_1.png,
+   EXT:lang/cshimages/pages_2.png,</source>
+               <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+            </trans-unit>
+            <trans-unit id=".image_descr" xml:space="preserve">
+               <source>The most basic fields on a page are the 'Disable Page' option, the 'Type' of page ("doktype") and the 'Page Title'.
+   Pages are arranged in a page tree in TYPO3. The page from the editing form in the previous screenshot was the "Intro" page from this page tree. As you can see it belongs in the root of the page tree and has a number of subpages pages under it.</source>
+            </trans-unit>
+            <trans-unit id="title.description">
+               <source>Enter the title of the page or folder. This field is required.</source>
+            </trans-unit>
+            <trans-unit id="title.details" xml:space="preserve">
+               <source>The 'Page Title' is used to represent the page visually in the system, for example in the page tree. Also the 'Page Title' is used by default for navigation links on webpages.
+   You can always change the 'Page Title' without affecting links to a page. This is because pages are always referenced by ID number, not their title.
+   You can use any characters in the 'Page Title'.</source>
+            </trans-unit>
+            <trans-unit id="_title.image">
+               <source>EXT:lang/cshimages/pages_3.png</source>
+               <note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
+            </trans-unit>
+            <trans-unit id="title.image_descr">
+               <source>The field for the 'Page Title' has a small "Required" icon next to it; You must supply a 'Page Title'. You cannot save the new page unless you enter a title for it.</source>
+            </trans-unit>
+            // ...
+         </body>
+      </file>
+   </xliff>
 
 As you can see, the names of the keys inside the language file
 (the "id" attribute) follow strict conventions. Each key is
@@ -192,9 +192,9 @@ It is also possible to extend an existing label. Here is an extract from
 
 .. code-block:: xml
 
-	<trans-unit id="title.description.+">
-		<source>This is normally shown in the website navigation.</source>
-	</trans-unit>
+   <trans-unit id="title.description.+">
+      <source>This is normally shown in the website navigation.</source>
+   </trans-unit>
 
 This file also targets the "pages" table. The key :code:`title.description.+`
 (note the trailing :code:`+` sign) means that this label will be added to the

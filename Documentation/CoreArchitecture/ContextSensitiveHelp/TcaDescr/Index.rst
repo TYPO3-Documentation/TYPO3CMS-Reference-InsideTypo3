@@ -6,17 +6,17 @@
 The $TCA\_DESCR array
 ^^^^^^^^^^^^^^^^^^^^^
 
-The global array :code:`$TCA_DESCR` is reserved to contain CSH labels. CSH
+The global array :php:`$TCA_DESCR` is reserved to contain CSH labels. CSH
 labels are loaded as they are needed. Thus the class rendering the
 form will make an API call to the global language object to have the
 CSH labels loaded - if any - for the relevant table.
 
-Basically, the :code:`$TCA_DESCR` array contains references to the
+Basically, the :php:`$TCA_DESCR` array contains references to the
 registered language files. As it gets used, it is filled with the
 actual labels. This task is performed by method
-:code:`\TYPO3\CMS\Core\Localization\LanguageService::loadSingleTableDescription()`.
+:php:`\TYPO3\CMS\Core\Localization\LanguageService::loadSingleTableDescription()`.
 
-The content of the :code:`$TCA_DESCR` array can be reviewed in the
+The content of the :php:`$TCA_DESCR` array can be reviewed in the
 **SYSTEM > Configuration** module:
 
 .. figure:: ../../../Images/ContextSensitiveHelpTcaDescr.png
@@ -40,7 +40,7 @@ This makes it possible to:
 Keys in $TCA\_DESCR
 """""""""""""""""""
 
-Each file is registered with :code:`$TCA_DESCR` using a key. For a
+Each file is registered with :php:`$TCA_DESCR` using a key. For a
 database table, this is simple the table name. For backend modules you
 can use the following syntax:
 
@@ -54,4 +54,4 @@ For the **WEB > Info** module, the key is:
 
 	_MOD_web_info
 
-The loaded labels will be available in :code:`$TCA_DESCR[(key)]['columns']`.
+The loaded labels will be available in :php:`$TCA_DESCR[(key)]['columns']`.
