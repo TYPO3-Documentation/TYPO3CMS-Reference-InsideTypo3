@@ -93,10 +93,6 @@ core
   but not least, it delivers a huge number of base PHP classes, far too many
   to describe here.
 
-  .. tip::
-
-     A nice way to browse TYPO3 CMS Core classes is to use http://api.typo3.org/.
-
 backend
   This system extension provides all that is necessary to run the TYPO3 CMS
   backend. This means quite a few PHP classes, but also a lot of Fluid templates.
