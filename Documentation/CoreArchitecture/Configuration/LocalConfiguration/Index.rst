@@ -107,6 +107,6 @@ SYS
 
 Details on the various configuration-options can be found in the install-tool
 as well as the TYPO3-source at
-:file:`typo3/sysext/core/Configuration/DefaultConfigurationDescription.php`.
+:file:`typo3/sysext/core/Configuration/DefaultConfigurationDescription.yml`.
 The documentation shown in the install-tool is automatically extracted from
-those values of :file:`DefaultConfigurationDescription.php`.
+those values of :file:`DefaultConfigurationDescription.yml`.
