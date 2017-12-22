@@ -109,8 +109,8 @@ frontend
   type, plus a number of base and utility classes).
 
 extbase
-  Extbase is a MVC framework (with the "View" part being actually system extension
-  "fluid") originally derived from the `Flow framework <https://www.neos.io/>`_.
+  Extbase is a MVC framework, with the "View" part being actually system extension
+  "fluid".
   Not all of the TYPO3 CMS backend is written in Extbase, but many modules are,
   with more being migrated to that framework with each new version.
 
