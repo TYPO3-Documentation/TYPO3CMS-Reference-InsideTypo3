@@ -35,8 +35,7 @@ using the following API:
     );
 
 Here the module ``tx_Beuser`` is declared as being a submodule of main module ``system``.
-I
-t should be placed at the ``top`` of that main module, if possible (if several modules
+It should be placed at the ``top`` of that main module, if possible (if several modules
 are declared at the same position, the last one wins). The following positions are possible:
 
 * ``top``: the module is prepended to the top of the submodule list
