@@ -33,7 +33,7 @@ Fileoperation permissions
 Access options
   A backend user can be disabled (first flag in the "General" tab). A disabled
   user cannot log into the backend anymore. Furthermore, in the "Access" tab
-  a start and end time can be given, defining a time inverval during which the
+  a start and end time can be given, defining a time interval during which the
   user will be allowed to log into the backend. Authentication before the start
   time and after the end time will automatically fail.
 
