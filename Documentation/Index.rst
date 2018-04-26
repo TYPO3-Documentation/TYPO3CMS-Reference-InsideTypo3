@@ -70,13 +70,19 @@ address the task at hand.
 
 **Table of Contents**
 
-Please visit the complete :ref:`Sitemap`.
+.. _Sitemap:
+
+.. _introduction:
+.. _overview:
+.. _audience:
+.. _what-s-new:
+.. _feedback:
+.. _credits:
+
 
 .. toctree::
    :hidden:
 
-   Sitemap/Index
-   Introduction/Index
    BasicInstallation/Index
    CoreArchitecture/Index
    Targets
