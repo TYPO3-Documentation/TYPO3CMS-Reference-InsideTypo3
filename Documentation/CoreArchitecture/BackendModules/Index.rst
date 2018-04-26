@@ -18,6 +18,5 @@ backend. They are described in this chapter.
    Structure/Index
    TemplateClass/Index
    BackendModuleApi/Index
-   FunctionMenuModules/Index
    CliScripts/Index
 
