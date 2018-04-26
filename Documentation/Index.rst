@@ -79,11 +79,12 @@ address the task at hand.
 .. _feedback:
 .. _credits:
 
+.. _installation:
+
 
 .. toctree::
    :hidden:
 
-   BasicInstallation/Index
    CoreArchitecture/Index
    Targets
 
