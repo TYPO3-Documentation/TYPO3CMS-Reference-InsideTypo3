@@ -5,6 +5,14 @@ Core Architecture
 =================
 
 
+.. _internationalization-localization:
+.. _adding-language:
+.. _translating:
+.. _translations:
+.. _language-classes:
+
+
+
 .. toctree::
    :maxdepth: 5
    :titlesonly:
@@ -17,7 +25,6 @@ Core Architecture
    BackendModules/Index
    Database/Index
    VersioningAndWorkspaces/Index
-   Localization/Index
    ContextSensitiveHelp/Index
    Security/Index
 
