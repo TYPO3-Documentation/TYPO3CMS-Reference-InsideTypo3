@@ -11,7 +11,7 @@ Core Architecture
 .. _translations:
 .. _language-classes:
 
-
+.. _workspaces:
 
 .. toctree::
    :maxdepth: 5
@@ -24,7 +24,6 @@ Core Architecture
    AccessControl/Index
    BackendModules/Index
    Database/Index
-   VersioningAndWorkspaces/Index
    ContextSensitiveHelp/Index
    Security/Index
 
