@@ -20,6 +20,10 @@ Core Architecture
 .. _database-upgrade:
 .. _database-exttables-sql:
 
+.. _extensions:
+.. _extensions-package-manager:
+.. _extensions-system-main:
+
 .. _workspaces:
 
 .. _security:
@@ -32,7 +36,6 @@ Core Architecture
    :glob:
 
    Backend/Index
-   Extensions/Index
    Configuration/Index
    AccessControl/Index
    BackendModules/Index
