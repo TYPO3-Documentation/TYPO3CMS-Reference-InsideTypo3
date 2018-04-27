@@ -13,6 +13,8 @@ Core Architecture
 
 .. _workspaces:
 
+.. _security:
+
 .. toctree::
    :maxdepth: 5
    :titlesonly:
@@ -25,5 +27,4 @@ Core Architecture
    BackendModules/Index
    Database/Index
    ContextSensitiveHelp/Index
-   Security/Index
 
