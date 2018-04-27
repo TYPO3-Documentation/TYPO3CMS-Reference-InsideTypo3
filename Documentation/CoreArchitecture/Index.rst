@@ -11,9 +11,20 @@ Core Architecture
 .. _translations:
 .. _language-classes:
 
+.. _database:
+.. _database-introduction:
+.. _database-structure:
+.. _database-structure-requirements:
+.. _database-structure-pages:
+.. _database-structure-other-tables:
+.. _database-upgrade:
+.. _database-exttables-sql:
+
 .. _workspaces:
 
 .. _security:
+
+
 
 .. toctree::
    :maxdepth: 5
@@ -25,6 +36,5 @@ Core Architecture
    Configuration/Index
    AccessControl/Index
    BackendModules/Index
-   Database/Index
    ContextSensitiveHelp/Index
 
