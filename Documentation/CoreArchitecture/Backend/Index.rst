@@ -2,6 +2,7 @@
 
 
 .. _backend:
+.. _backend-routing:
 
 Backend
 -------
@@ -16,4 +17,3 @@ is set up and how requests are routed.
    :glob:
 
    Initialization/Index
-   Routing/Index
