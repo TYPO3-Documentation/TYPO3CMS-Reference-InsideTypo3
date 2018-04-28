@@ -45,6 +45,16 @@ Core Architecture
 .. _backend-modules-api-registration:
 .. _backend-modules-api-tbemodules:
 
+.. _configuration:
+.. _configuration-local-configuration:
+.. _configuration-additional-configuration:
+.. _configuration-default-configuration:
+.. _configuration-install-tool:
+.. _configuration-module:
+.. _configuration-tsconfig:
+.. _configuration-tsconfig-user:
+.. _configuration-tsconfig-page:
+
 .. _cli-mode:
 .. _initialize-cli-mode:
 .. _cli-mode-dispatcher:
@@ -61,6 +71,4 @@ Core Architecture
    :titlesonly:
    :glob:
 
-   Configuration/Index
    AccessControl/Index
-
