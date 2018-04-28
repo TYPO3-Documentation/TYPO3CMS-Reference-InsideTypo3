@@ -2,6 +2,7 @@
 
 
 .. _access:
+.. _authentication:
 
 Access Control
 --------------
@@ -18,5 +19,4 @@ Access Control
    OtherOptions/Index
    MoreAboutFileMounts/Index
    OverviewOfUsers/Index
-   Authentication/Index
 
