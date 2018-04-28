@@ -1,74 +1,6 @@
 .. include:: Includes.txt
 
-
 .. _start:
-
-================
-Inside TYPO3 CMS
-================
-
-:Previous Key:
-      doc_core_inside
-
-:Version:
-      latest (9-dev)
-
-:Language:
-      en
-
-:Description:
-      A deep look into the inner workings and architecture of TYPO3 CMS
-
-:Keywords:
-      inside, architecture, security, forAdmins, forDevelopers, forIntermediates
-
-:Copyright:
-      2000-2016
-
-:Author:
-      Documentation Team
-
-:Email:
-      documentation@typo3.org
-
-:License:
-      Open Publication License available from `www.opencontent.org/openpub/
-      <http://www.opencontent.org/openpub/>`_
-
-:Rendered:
-      |today|
-
-The content of this document is related to TYPO3,
-
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<https://typo3.org/>`_
-
-
-**Official documentation**
-
-This document is included as part of the official TYPO3 documentation.
-It has been approved by the TYPO3 Documentation Team following a peer-
-review process. The reader should expect the information in this
-document to be accurate - please report discrepancies to the
-Documentation Team (documentation@typo3.org). Official documents are
-kept up-to-date to the best of the Documentation Team's abilities.
-
-
-**Core Manual**
-
-This document is a Core Manual. Core Manuals address the built in
-functionality of TYPO3 and are designed to provide the reader with in-
-depth information. Each Core Manual addresses a particular process or
-function and how it is implemented within the TYPO3 source code. These
-may include information on available APIs, specific configuration
-options, etc.
-
-Core Manuals are written as reference manuals. The reader should rely
-on the Table of Contents to identify what particular section will best
-address the task at hand.
-
-
-**Table of Contents**
 
 .. _Sitemap:
 
@@ -81,10 +13,99 @@ address the task at hand.
 
 .. _installation:
 
+.. _backend:
+.. _backend-initialization:
+.. _backend-routing:
 
-.. toctree::
-   :hidden:
+.. _internationalization-localization:
+.. _adding-language:
+.. _translating:
+.. _translations:
+.. _language-classes:
 
-   CoreArchitecture/Index
-   Targets
+.. _database:
+.. _database-introduction:
+.. _database-structure:
+.. _database-structure-requirements:
+.. _database-structure-pages:
+.. _database-structure-other-tables:
+.. _database-upgrade:
+.. _database-exttables-sql:
 
+.. _extensions:
+.. _extensions-package-manager:
+.. _extensions-system-main:
+
+.. _csh:
+.. _csh-tca-descr:
+.. _csh-tca-descr-keys:
+.. _csh-files:
+.. _csh-files-syntax:
+.. _csh-files-extend-label:
+.. _csh-implementation:
+.. _csh-implementation-new-table:
+.. _csh-implementation-extend-table:
+.. _csh-implementation-modules:
+
+.. _backend-modules:
+.. _backend-modules-structure:
+.. _backend-modules-template:
+.. _backend-modules-api:
+.. _backend-modules-api-registration:
+.. _backend-modules-api-tbemodules:
+
+.. _configuration:
+.. _configuration-local-configuration:
+.. _configuration-additional-configuration:
+.. _configuration-default-configuration:
+.. _configuration-install-tool:
+.. _configuration-module:
+.. _configuration-tsconfig:
+.. _configuration-tsconfig-user:
+.. _configuration-tsconfig-page:
+
+.. _cli-mode:
+.. _initialize-cli-mode:
+.. _cli-mode-dispatcher:
+.. _cli-mode-command-controllers:
+
+.. _access:
+.. _authentication:
+.. _access-users-groups:
+.. _access-users-groups-users:
+.. _access-users-groups-groups:
+.. _access-users-groups-admin:
+.. _access-users-groups-location:
+.. _access-options:
+.. _access-options-access-lists:
+.. _access-options-mounts:
+.. _access-options-page-permissions:
+.. _access-options-user-tsconfig:
+.. _access-other-options:
+.. _access-other-options-users:
+.. _access-other-options-groups:
+.. _access-filemounts-more:
+.. _access-filemounts-more-local-driver:
+.. _access-filemounts-home-directories:
+.. _access-backend-users-module:
+
+.. _workspaces:
+
+.. _security:
+
+================
+Inside TYPO3 CMS
+================
+
+.. attention::
+
+   This document has been merged into :ref:`TYPO3 Core API <t3coreapi:start>`
+   since core version 9.
+
+.. rst-class:: horizbuttons-tip-xxl
+
+- :ref:`This manual has moved <t3coreapi:start>`
+
+*Older versions*
+(`v8.7 </typo3cms/InsideTypo3Reference/8.7/>`__):
+Please refer to "Related Links" in the lower left corner of the page.
