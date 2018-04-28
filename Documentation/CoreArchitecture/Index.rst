@@ -4,6 +4,9 @@
 Core Architecture
 =================
 
+.. _backend:
+.. _backend-initialization:
+.. _backend-routing:
 
 .. _internationalization-localization:
 .. _adding-language:
@@ -35,7 +38,6 @@ Core Architecture
    :titlesonly:
    :glob:
 
-   Backend/Index
    Configuration/Index
    AccessControl/Index
    BackendModules/Index
