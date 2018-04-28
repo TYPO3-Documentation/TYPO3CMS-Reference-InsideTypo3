@@ -38,6 +38,18 @@ Core Architecture
 .. _csh-implementation-extend-table:
 .. _csh-implementation-modules:
 
+.. _backend-modules:
+.. _backend-modules-structure:
+.. _backend-modules-template:
+.. _backend-modules-api:
+.. _backend-modules-api-registration:
+.. _backend-modules-api-tbemodules:
+
+.. _cli-mode:
+.. _initialize-cli-mode:
+.. _cli-mode-dispatcher:
+.. _cli-mode-command-controllers:
+
 .. _workspaces:
 
 .. _security:
@@ -51,5 +63,4 @@ Core Architecture
 
    Configuration/Index
    AccessControl/Index
-   BackendModules/Index
 
