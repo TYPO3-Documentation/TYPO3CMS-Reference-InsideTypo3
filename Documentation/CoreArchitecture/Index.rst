@@ -27,6 +27,17 @@ Core Architecture
 .. _extensions-package-manager:
 .. _extensions-system-main:
 
+.. _csh:
+.. _csh-tca-descr:
+.. _csh-tca-descr-keys:
+.. _csh-files:
+.. _csh-files-syntax:
+.. _csh-files-extend-label:
+.. _csh-implementation:
+.. _csh-implementation-new-table:
+.. _csh-implementation-extend-table:
+.. _csh-implementation-modules:
+
 .. _workspaces:
 
 .. _security:
@@ -41,5 +52,4 @@ Core Architecture
    Configuration/Index
    AccessControl/Index
    BackendModules/Index
-   ContextSensitiveHelp/Index
 
