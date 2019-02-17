@@ -17,8 +17,7 @@ The FAL is comprised of the following components:
 Drivers
   Drivers are what makes it possible to access a given type of media
   storage. The Core provides a driver to access the local file system.
-  Extensions exist that provide a driver for remote systems, like SFTP
-  or platforms like Amazon S3.
+  Extensions exist that provide a driver for remote systems like Amazon S3.
 
 Storages
   A File Storage uses a driver to connect to a given storage system.
