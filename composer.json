@@ -1,0 +1,9 @@
+{
+    "name": "typo3/reference-inside",
+    "type": "typo3-cms-documentation",
+    "description": "A deep look into the inner workings and architecture of TYPO3 CMS",
+    "license": "OPL-1.0",
+    "require": {
+      "typo3/cms-core": "^9.5"
+    }
+}
