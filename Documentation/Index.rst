@@ -7,11 +7,8 @@
 Inside TYPO3 CMS
 ================
 
-:Previous Key:
-      doc_core_inside
-
 :Version:
-      8.7 LTS
+      |release|
 
 :Language:
       en
@@ -35,8 +32,6 @@ Inside TYPO3 CMS
       Open Publication License available from `www.opencontent.org/openpub/
       <http://www.opencontent.org/openpub/>`_
 
-:Rendered:
-      |today|
 
 The content of this document is related to TYPO3,
 
