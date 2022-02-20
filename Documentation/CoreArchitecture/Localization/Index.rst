@@ -38,7 +38,7 @@ Translating TYPO3 CMS
 Translations happen on the community translation server
 (https://translation.typo3.org/) both for the Core and for
 extensions. More information can be found in the
-`TYPO3 wiki <http://wiki.typo3.org/Translation>`_.
+:ref:`Frontend Localization Guide <t3translate:start>`.
 
 
 .. _translations:
