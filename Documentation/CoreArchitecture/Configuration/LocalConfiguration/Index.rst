@@ -18,7 +18,7 @@ The local configuration file is basically a long array which is simply returned
 when the file is included. It represents the global TYPO3 CMS configuration.
 This configuration can be modified/extended/overridden by extensions,
 by setting configuration options inside an extension's
-:file:`ext_localconf.php` file. See :ref:`Core APIs <t3api:extension-files-locations>`
+:file:`ext_localconf.php` file. See :ref:`Core APIs <t3coreapi:extension-files-locations>`
 for more details about extension structure.
 
 Here is the local configuration file after the :ref:`basic installation <installation>`:
