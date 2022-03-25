@@ -1,4 +1,4 @@
-.. include:: /Includes.txt
+.. include:: /Includes.rst.txt
 
 ================
 Inside TYPO3 CMS

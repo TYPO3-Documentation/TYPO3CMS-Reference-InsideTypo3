@@ -1,4 +1,4 @@
-.. include:: ../../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _access-filemounts-more:
@@ -8,9 +8,9 @@ More about File Mounts
 
 File mounts require a little more description of the concepts provided
 by TYPO3 CMS. All files are handled by an application layer called
-the "File Abstraction Layer" (FAL). You can find more information 
+the "File Abstraction Layer" (FAL). You can find more information
 about the basic concepts of the FAL in the corresponding
-manual :ref:`File Abstraction Layer <t3fal:concepts>` 
+manual :ref:`File Abstraction Layer <t3fal:concepts>`
 
 The FAL is comprised of the following components:
 
