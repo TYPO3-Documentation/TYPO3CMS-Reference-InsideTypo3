@@ -99,7 +99,7 @@ Inside TYPO3 CMS
 
 .. attention::
 
-   This document has been merged into :ref:`TYPO3 Core API <t3coreapi:start>`
+   This document has been merged into :doc:`TYPO3 Explained <t3coreapi:Index>`
    since core version 9.
 
 :Version:
