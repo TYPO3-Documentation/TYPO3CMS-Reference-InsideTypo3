@@ -12,7 +12,7 @@ and the required system extensions (i.e. system extension which are always
 installed and can not be removed).
 
 The installation process is covered in the
-:ref:`Installation and Upgrade Guide <t3install:start>`.
+:doc:`Installation and Upgrade Guide <t3install:Index>`.
 You should perform the basic installation steps and **not** install
 any distribution. This will give you the "lightest" possible version
 of TYPO3 CMS.

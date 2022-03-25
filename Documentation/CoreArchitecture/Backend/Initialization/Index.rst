@@ -13,7 +13,7 @@ used in the frontend, but only the backend process is described here.
 
 Classes involved in the backend bootstrapping process are :php:`\TYPO3\CMS\Core\Core\Bootstrap` and :php:`TYPO3\CMS\Backend\Http\Application`.
 
-The following steps are performed during bootstrapping. 
+The following steps are performed during bootstrapping.
 
 1. Define legacy constants
 ==========================
@@ -115,6 +115,6 @@ backend will typically go through such important steps like:
 
 -  checking backend access: Is it locked? Does it have proper SSL setup?
 
--  loading the full :ref:`TCA <t3tca:start>`
+-  loading the full :doc:`TCA <t3tca:Index>`
 
 -  verifying and initializing the backend user
