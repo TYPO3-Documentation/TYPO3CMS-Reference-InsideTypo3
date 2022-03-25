@@ -102,10 +102,23 @@ Inside TYPO3 CMS
    This document has been merged into :ref:`TYPO3 Core API <t3coreapi:start>`
    since core version 9.
 
-.. rst-class:: horizbuttons-tip-xxl
+:Version:
+   |release|
 
-- :ref:`This manual has moved <t3coreapi:start>`
+:Language:
+   en
 
-*Older versions*
-(`v8.7 </typo3cms/InsideTypo3Reference/8.7/>`__):
-Please refer to "Related Links" in the lower left corner of the page.
+:Author:
+   TYPO3 contributors
+
+:License:
+   This document is published under the
+   `Open Publication License <https://www.opencontent.org/openpub/>`__.
+
+:Rendered:
+   |today|
+
+----
+
+This documentation allows a deep insight into the inner workings and
+architecture of the TYPO3 CMS.
