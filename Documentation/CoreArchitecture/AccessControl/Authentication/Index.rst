@@ -6,7 +6,7 @@
 Authentication
 ^^^^^^^^^^^^^^
 
-Authentication in TYPO3 CMS is done via the :ref:`services API <t3services:start>`.
+Authentication in TYPO3 CMS is done via the :doc:`services API <t3services:Index>`.
 This makes it very flexible. It is easy to add new authentication services
 via extensions.
 

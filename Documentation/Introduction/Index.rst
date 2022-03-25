@@ -34,7 +34,7 @@ the API available to the outside. This is supposed to be the final
 technical reference apart from source code itself which is - of course
 - the ultimate documentation.
 
-This manual is a complement to :ref:`Core APIs <t3coreapi:start>`.
+This manual is a complement to :doc:`Core APIs <t3coreapi:Index>`.
 
 
 .. _audience:

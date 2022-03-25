@@ -105,6 +105,6 @@ backend will typically go through such important steps like:
 
 -  checking backend access: Is it locked? Does it have proper SSL setup?
 
--  loading the full :ref:`TCA <t3tca:start>`
+-  loading the full :doc:`TCA <t3tca:Index>`
 
 -  verifying and initializing the backend user
