@@ -1,4 +1,4 @@
-.. include:: ../../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _access-options:
@@ -86,7 +86,7 @@ Page types
   to access only some of them.
 
   For a full discussion on page types, please refer to the
-  :ref:`Core APIs reference <t3api:page-types>`.
+  :ref:`Core APIs reference <t3coreapi:page-types>`.
 
 Excludefields
   When defining column tables in TCA, it is possible to set the

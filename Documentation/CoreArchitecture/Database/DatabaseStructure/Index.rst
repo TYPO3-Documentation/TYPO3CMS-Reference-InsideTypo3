@@ -1,5 +1,5 @@
 
-.. include:: ../../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _database-structure:
@@ -20,7 +20,7 @@ TYPO3 CMS backend.
 
 There are certain requirements for such managed tables:
 
-- The table must be configured in the :ref:`global TCA array <t3tca:start>`.
+- The table must be configured in the :doc:`global TCA array <t3tca:Index>`.
   This will tell TYPO3 CMS things like the table name,
   features you have configured, the fields of the table and how to
   render these in the backend, relations to other tables, etc.
@@ -76,7 +76,7 @@ a reference to the page where that record is stored. For pages,
 the "pid" fields behaves as a reference to their parent pages.
 
 The special "root" page has three unique properties: its pid is 0 (zero),
-only admin-users can access records on it and these records have to be :ref:`explicitly configured to reside in the root page <t3tca:ctrl-reference-rootlevel>`. (Usually table records may only be created on a real page.) 
+only admin-users can access records on it and these records have to be :ref:`explicitly configured to reside in the root page <t3tca:ctrl-reference-rootlevel>`. (Usually table records may only be created on a real page.)
 
 
 .. _database-structure-other-tables:

@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _extensions:
@@ -22,7 +22,7 @@ the possibility of including any library published on
 `Packagist <https://packagist.org/>`_.
 
 The architecture of an extension is described in detail in the
-:ref:`Core APIs Reference <t3api:extension-architecture>`.
+:ref:`Core APIs Reference <t3coreapi:extension-architecture>`.
 
 
 .. _extensions-package-manager:

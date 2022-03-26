@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _internationalization-localization:
@@ -16,7 +16,7 @@ The default language is English, and the Core ships only with such labels
 All labels are stored in XLIFF format, generally located in the
 :file:`Resources/Private/Language` folder of an extension (old locations
 may still be found in some places). Working with XLIFF files is
-described in more detail in :ref:`Core API <t3api:internationalization>`.
+described in more detail in :ref:`Core API <t3coreapi:internationalization>`.
 
 
 .. _adding-language:
@@ -38,7 +38,7 @@ Translating TYPO3 CMS
 Translations happen on the community translation server
 (https://translation.typo3.org/) both for the Core and for
 extensions. More information can be found in the
-:ref:`Frontend Localization Guide <t3translate:start>`.
+:doc:`Frontend Localization Guide <t3translate:Index>`.
 
 
 .. _translations:
@@ -79,7 +79,7 @@ Various classes are involved in the localization process.
 
 The :code:`\TYPO3\CMS\Core\Localization\LocalizationFactory` class is dedicated
 to loading the language files. It also manages
-:ref:`localization overrides <t3api:xliff-translating-custom>`.
+:ref:`localization overrides <t3coreapi:xliff-translating-custom>`.
 
 The :code:`\TYPO3\CMS\Lang\LanguageService` provides the actual methods
 to retrieve a localized label. :code:`getLL()` gets a label from an already
