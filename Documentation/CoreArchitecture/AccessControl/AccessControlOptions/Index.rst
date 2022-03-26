@@ -1,4 +1,4 @@
-.. include:: ../../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _access-options:
@@ -86,7 +86,7 @@ Page types
   to access only some of them.
 
   For a full discussion on page types, please refer to the
-  :ref:`Core APIs reference <t3api:page-types>`.
+  :ref:`Core APIs reference <t3coreapi:page-types>`.
 
 Excludefields
   When defining column tables in TCA, it is possible to set the
@@ -144,7 +144,7 @@ This is what the user will see:
 
 **File Mounts** are a little more difficult to set up, as they
 involve several steps. First of all, you need to have at least
-one :ref:`File Storage <t3fal:concepts-storages-drivers>`. By 
+one :ref:`File Storage <t3fal:concepts-storages-drivers>`. By
 default, you will always have one, pointing
 to the :file:`fileadmin` directory. It is created by TYPO3 CMS
 upon installation.
@@ -208,7 +208,7 @@ Page permissions
 """"""""""""""""
 
 Page permissions are designed to work like file permissions on UNIX
-systems. Each page record has an owner user and group and 
+systems. Each page record has an owner user and group and
 permission settings for the owner, the group and "everybody". This is
 summarized here:
 

@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 
@@ -34,7 +34,7 @@ the API available to the outside. This is supposed to be the final
 technical reference apart from source code itself which is - of course
 - the ultimate documentation.
 
-This manual is a complement to :ref:`Core APIs <t3api:start>`.
+This manual is a complement to :doc:`Core APIs <t3coreapi:Index>`.
 
 
 .. _audience:
@@ -80,7 +80,7 @@ using the bug tracker <https://github.com/TYPO3-Documentation/TYPO3CMS-Reference
 
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
-If you want to support us, please join the slack channel `typo3-documentation 
+If you want to support us, please join the slack channel `typo3-documentation
 <https://typo3.slack.com/messages/C028JEPJL>`__. Visit https://forger.typo3.org/slack to gain
 access to Slack.
 Have a look at the contribution page for more information: https://docs.typo3.org/Contribute/Index.html
